@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BMW - The Ultimate Driving Machine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="boot.css" />
+  </head>
+  <body>
+    <!-----------------------header-section----------------------------->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center text-white" href="#">
+            <img src="img/bmw-logo.jpg" alt="BMW" width="100" class="me-2" />
+            <div>
+              <strong>BMW</strong><br />
+              <small class="ultimate">The Ultimate Driving Machine</small>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#bmwNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="bmwNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Models</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Build Your Own</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Find a Dealer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-----------------------------main-section----------------------------->
+    <main>
+      <section>
+        <div  class="d-flex flex-wrap gap-2 p-3 bg-none justify-content-center border-rounded m-3 rounded-3 head-btn" >
+          <button class="btn btn-outline-info filter-btn" data-filter="all">
+            All
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter="sedan"
+          >
+            Sedan
+          </button>
+          <button class="btn btn-outline-success filter-btn" data-filter="suv">
+            SUV
+          </button>
+          <button class="btn btn-outline-danger filter-btn" data-filter="coupe">
+            Coupe
+          </button>
+          <button
+            class="btn btn-outline-warning filter-btn"
+            data-filter="convertible"
+          >
+            Convertible
+          </button>
+          <button
+            class="btn btn-outline-lite filter-btn"
+            data-filter="electric-suv"
+          >
+            Electric-SUV
+          </button>
+          <button
+            class="btn btn-outline-tertiary filter-btn"
+            data-filter="luxury-sedan"
+          >
+            Luxury-Sedan
+          </button>
+          <button
+            class="btn btn-outline-secondary filter-btn"
+            data-filter="electric-sedan"
+          >
+            Electric-Sedan
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="grid-18">
+          <div class="col-1" data-category="sedan" data-page="bmw-3series.html">
+            <img src="img/1.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 25% OFF</button>
+            <div class="series-3">
+              <h5 class="ms-3">BMW 3 Series</h5>
+              <button class="btnn">Sedan</button>
+              <p class="i330">330i</p>
+              <p class="pehra">
+                The ultimate sports sedan combines performance and luxury in
+                perfect...
+              </p>
+              <p class="stock">
+                <span><i class="bi bi-car-front"></i></span> 4 in stock
+              </p>
+              <p class="price">
+                Starting at<br /><span class="text-info">$45,000</span>
+              </p>
+              <button
+                type="button"
+                class="btn btn-primery p-1 f-1 rounded-3 buy"
+              >
+                <i class="bi bi-cart"></i>Buy
+              </button>
+            </div>
+          </div>
+          <div class="col" data-category="suv"  data-page="bmwx-5.html">
+            <img src="img/2.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW X5</h5>
+            <button class="btnn">SUV</button>
+            <p class="i330">xDrive40i</p>
+            <p class="pehra">
+              Premium SUV with commanding <br />pressnce and...
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 5 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$65,800</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="coupe" data-page="bmwm-4.html">
+            <img src="img/3.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW M4</h5>
+            <button class="btnn">Coupe</button>
+            <p class="i330">Competetion</p>
+            <p class="pehra">Pure M performances. Trak-bred enginerring...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 2 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$85,8500</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="convertible" data-page="bmw-4series.html">
+            <img src="img/4.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW 4 Series</h5>
+            <button class="btnn">Convertible</button>
+            <p class="i330">430i</p>
+            <p class="pehra">Convertible Open-air driving excitement with...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 7 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$57,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="electric-suv" data-page="bmwix.html">
+            <img src="img/5.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW iX</h5>
+            <button class="btnn">Electric SUV</button>
+            <p class="i330">xDrive50</p>
+            <p class="pehra">
+              The future of mobility Zero emissions, infinite...
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 8 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$75,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="luxury-sedan" data-page="bmw7-series.html">
+            <img src="img/6.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 10% OFF</button>
+            <h5 class="ms-3">BMW 7 Series</h5>
+            <button class="btnn">Luxury sedan</button>
+            <p class="i330">740i</p>
+            <p class="pehra">
+              The pinnacle of lusurg. Excctive presence with..
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 4 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="text-info">$95,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="coupe" data-page="bmw8-series.html">
+            <img src="img/7.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW 8 Series</h5>
+            <button class="btnn">Coupe</button>
+            <p class="i330">840i Gran coupe</p>
+            <p class="pehra">Elegant sophistiction meets dynamic...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 3 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$89,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="suv" data-page="bmwx7.html">
+            <img src="img/8.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW X7</h5>
+            <button class="btnn">SUV</button>
+            <p class="i330">xDrive40i</p>
+            <p class="pehra">
+              The ultimate luxury SUV. Commanding presence wi...
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 9 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$58,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="sedan" data-page="bmwm5.html">
+            <img src="img/9.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW m5</h5>
+            <button class="btnn">Sedan</button>
+            <p class="i330">competition</p>
+            <p class="pehra">The pinnacle of M performance sedans. Race...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 1 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$150,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="electric-sedan" data-page="bmwi4.html">
+            <img src="img/10.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 19% OFF</button>
+            <h5 class="ms-3">BMW i4</h5>
+            <button class="btnn">Eletric Sedan</button>
+            <p class="i330">xDrive40</p>
+            <p class="pehra">Electric performance meets Gran Coupe...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 5 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="text-info">$44,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="suv" data-page="bmwx3.html">
+            <img src="img/11.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW X3</h5>
+            <button class="btnn">Suv</button>
+            <p class="i330">m40i</p>
+            <p class="pehra">The compact SAV weth M performance DNA.Agil...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 4 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$54,700</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="coupe" data-page="bmwm8.html">
+            <img src="img/12.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW M8</h5>
+            <button class="btnn">Coupe</button>
+            <p class="i330">Gran Coupe</p>
+            <p class="pehra">
+              The ultimate expression of BMW M.Uncompromising...
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 5 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$145,700</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="convertible"data-page="bmwz4.html">
+            <img src="img/13.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW Z4</h5>
+            <button class="btnn">Convertible</button>
+            <p class="i330">m40i Roadster</p>
+            <p class="pehra">Pure roadster exitement. Dynamic performance...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 6 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$65,500</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="suv" data-page="bmwx6.html">
+            <img src="img/14.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 15% OFF</button>
+            <h5 class="ms-3">BMW X6</h5>
+            <button class="btnn">Suv</button>
+            <p class="i330">m50i</p>
+            <p class="pehra">
+              The Sports Activity Coupe that started it all. Bold
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 4 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="text-info">$69,454</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="sedan" data-page="bmwm3.html">
+            <img src="img/15.jpg" alt="BMW Car" />
+            <h5 class="ms-3">BMW M3</h5>
+            <button class="btnn">Sedan</button>
+            <p class="i330">Competition xDrive</p>
+            <p class="pehra">
+              The legendary BMW M3. Uncompromising performance...
+            </p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 2 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="price">$80,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="electric-sedan" data-page="bmwi7.html">
+            <img src="img/16.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 15% OFF</button>
+            <h5 class="ms-3">BMW i7</h5>
+            <button class="btnn">Electric Sedan</button>
+            <p class="i330">xDrive60</p>
+            <p class="pehra">The future of luxaury Electric flagship with..</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 8 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="text-info">$45,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="suv">
+            <img src="img/17.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 11% OFF</button>
+            <h5 class="ms-3">BMW X4</h5>
+            <button class="btnn">Suv</button>
+            <p class="i330">M Competition</p>
+            <p class="pehra">Athletic coupe design meets M Performance...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 4 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="text-info">$73,874</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+          <div class="col" data-category="sedan" data-page="bmw5-series.html">
+            <img src="img/18.jpg" alt="BMW Car" />
+            <button type="button" class="btn btn-1">🏷️ 21% OFF</button>
+            <h5 class="ms-3">BMW 5 Series</h5>
+            <button class="btnn">Sedan</button>
+            <p class="i330">540i xDrive</p>
+            <p class="pehra">The business athlete. perfect balance of...</p>
+            <p class="stock">
+              <span><i class="bi bi-car-front"></i></span> 4 in stock
+            </p>
+            <p class="price">
+              Starting at<br /><span class="text-info">$47,000</span>
+            </p>
+            <button type="button" class="btn btn-primery p-1 f-1 rounded-3 buy">
+              <i class="bi bi-cart"></i>Buy
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="text-center p-4 bg-dark text-white mt-4">
+          © 2026 BMW. All rights reserved.<br />
+          <small>Designed with ❤️ Pushap Raj</small>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="boot.js"></script>
+  </body>
+</html>
