@@ -1,9 +1,7 @@
- 
+
 const filterBtns = document.querySelectorAll('.filter-btn');
 const cars = document.querySelectorAll('.col, .col-1');
-const buyBtns = document.querySelectorAll('.buy');
 
- 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const filter = btn.dataset.filter;
@@ -12,40 +10,46 @@ filterBtns.forEach(btn => {
       if (filter === 'all') {
         car.style.display = 'block';
       } else {
-        car.style.display =
-          car.dataset.category === filter ? 'block' : 'none';
+        car.style.display = car.dataset.category === filter ? 'block' : 'none';
       }
     });
- 
+
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
   });
 });
 
-
  
+const buyBtns = document.querySelectorAll('.buy');
+
 buyBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
-    e.stopPropagation(); 
+    e.stopPropagation();  
+    const carName = btn.closest('.col, .col-1').querySelector('h5').innerText;
+    alert(`🛒 ${carName} added to cart!`);
+  });
 
-    const carName = btn
-      .closest('.col, .col-1')
-      .querySelector('h5').innerText;
-
+  
+  btn.addEventListener('touchstart', (e) => {
+    e.stopPropagation();
+    const carName = btn.closest('.col, .col-1').querySelector('h5').innerText;
     alert(`🛒 ${carName} added to cart!`);
   });
 });
 
-
-
+ 
 const carCards = document.querySelectorAll('.col, .col-1');
 
 carCards.forEach(card => {
-  card.addEventListener('click', () => {
-    const page = card.dataset.page;
+  const goToPage = (e) => { 
+    if (e.target.tagName.toLowerCase() === 'button' || e.target.tagName.toLowerCase() === 'i') return;
 
+    const page = card.dataset.page;
     if (page) {
-      window.location.href = page;  
+      window.location.href = page;
     }
-  });
+  };
+
+  card.addEventListener('click', goToPage);
+  card.addEventListener('touchstart', goToPage); 
 });
